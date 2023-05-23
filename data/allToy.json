@@ -1,0 +1,75 @@
+[
+    { 
+        "id":1,
+      "picture_url": "https://www.kapowtoys.co.uk/wp-content/uploads/2020/12/shhulk1.jpg",
+      "name": "Hulk",
+      "seller_name": "Aron",
+      "seller_email": "aron@gmail.com",
+      "sub_category": "Avenger",
+      "price": "$9.99",
+      "rating": 4.5,
+      "available_quantity": 10,
+      "description": "It is a highly detailed action figure with movable joints and accessories. It is suitable for children above the age of 5."
+    },
+    {
+        "id":2,
+      "picture_url": "https://c1.wallpaperflare.com/preview/120/828/28/action-figure-figure-collect-figures.jpg",
+      "name": "Iron Man",
+      "seller_name": "Aron",
+      "seller_email": "aron@gmail.com",
+      "sub_category": "Avenger",
+      "price": "$19.99",
+      "rating": 4.2,
+      "available_quantity": 5,
+      "description": "It is a set of colorful building blocks that promote creativity and imagination. It comes with a storage box for easy organization."
+    },
+    {
+        "id":3,
+      "picture_url": "https://media.istockphoto.com/id/506917672/photo/stormtrooper-figure-playing-the-gameboy.jpg?s=612x612&w=0&k=20&c=QtZ6raRJd53rvorPxoxk-l4fJa3Nj-I91cjBb595vHA=",
+      "name": "Stormtroopers ",
+      "seller_name": "Sakib",
+      "seller_email": "sakib@gmail.com",
+      "sub_category": "Star Wars",
+      "price": "$14.99",
+      "rating": 4.8,
+      "available_quantity": 3,
+      "description": "It is a beautiful doll with realistic features and a variety of outfits. It is ideal for collectors and doll enthusiasts."
+    },
+    { 
+        "id":4,
+      "picture_url": "https://media.istockphoto.com/id/540592062/photo/master-yoda.jpg?s=612x612&w=0&k=20&c=VF0m714mH_uNhNcMYZn8QwL-aaQhNnROIngFotkSKRY=",
+      "name": "Master Yoda",
+      "seller_name": "Sakib",
+      "seller_email": "sakib@gmail.com",
+      "sub_category": "Star Wars",
+      "price": "$12.99",
+      "rating": 4.6,
+      "available_quantity": 7,
+      "description": "It is is a challenging puzzle with 500 pieces. It features a vibrant and captivating image that will keep you entertained for hours."
+    },
+    {
+        "id":5,
+      "picture_url": "https://images-na.ssl-images-amazon.com/images/I/71uRENNFM4L._AC_UL600_SR600,600_.jpg",
+      "name": "Optimus Prime",
+      "seller_name": "NAZIM",
+      "seller_email": "nazim@gmail.com",
+      "sub_category": "Transformer",
+      "price": "$29.99",
+      "rating": 4.4,
+      "available_quantity": 2,
+      "description": "It is a remote control car that can perform stunts and maneuvers. It provides hours of fun for both kids and adults."
+    },
+    {  
+        "id":6,
+      "picture_url": "https://m.media-amazon.com/images/I/7101F0+rKTL._AC_SL1500_.jpg",
+      "name": "Bumblebee",
+      "seller_name": "NAZIM",
+      "seller_email": "nazim@gmail.com",
+      "sub_category": "Transformer",
+      "price": "$24.99",
+      "rating": 4.9,
+      "available_quantity": 8,
+      "description": "It is an educational toy that teaches basic math and language skills. It is designed to make learning enjoyable for young children."
+    }
+  ]
+  
