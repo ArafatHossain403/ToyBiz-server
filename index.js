@@ -13,7 +13,7 @@ const res = require('express/lib/response');
 app.use(cors());
 
 
-// console.log(process.env.DB_PASS)
+console.log(process.env.DB_PASS)
 // console.log(process.env.DB_USER)
 
 
