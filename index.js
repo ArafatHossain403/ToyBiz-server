@@ -11,7 +11,7 @@ app.use(express.json());
 
 
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId} = require('mongodb');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.ik2bdct.mongodb.net/?retryWrites=true&w=majority`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -26,7 +26,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
-    await client.connect();
+    // await client.connect();
     // Send a ping to confirm a successful connection
 
     const toyCollection = client.db("toybiz").collection("allToy");
@@ -43,11 +43,46 @@ async function run() {
         const result = await toyCollection.insertOne(newItem);
         res.send(result);
       })
+      app.delete('/allToy/:id', async (req, res) => {
+        const id = req.params.id;
+        const query= {_id: new ObjectId(id) };
+        const result = await toyCollection.deleteOne(query);
+        res.send(result);
+      })
+
     app.post('/users', async (req, res) => {
         const newUser = req.body;
         const result = await usersCollection.insertOne(newUser);
         res.send(result);
       })
+      
+      app.get('/allToy/:id',async (req, res) => {
+        const id = req.params.id;
+      
+        // Access the MongoDB collection and perform the query
+        // const collection = client.db('toybiz').collection('allToy"');
+        const result= await toyCollection.findOne({ _id: new ObjectId(id) }, (err, result) => {
+          if (err) {
+            console.error('Error retrieving data from MongoDB:', err);
+            res.status(500).send('Internal Server Error');
+            return;
+          }
+      
+          if (!result) {
+            res.status(404).send('Data not found');
+            return;
+          }
+      
+          res.json(result);
+        });
+        res.send(result);
+      });
+      
+    //   app.get('/allToy/:id', (req, res) => {
+    //     const id = req.params.id;
+    //     const selectedToy = toyCollection.find(n => n._id === id);
+    //     res.send(selectedToy)
+    // })
 
 
     await client.db("admin").command({ ping: 1 });
